@@ -30,8 +30,6 @@ var App = React.createClass({
     return (
       React.createElement('div', {className: 'app container'},
       React.createElement(Header, {}),
-        // React.createElement('h1', {className: 'contactsHeader'}, "Your contacts"),
-        // React.createElement('i', {className: 'fas fa-users'}),
         React.createElement(ContactForm, {contact: contactForm}),
         React.createElement(Contacts, {items: contacts}, {})
       )
