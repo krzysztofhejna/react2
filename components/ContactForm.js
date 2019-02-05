@@ -6,19 +6,28 @@ var ContactForm = React.createClass({
   render: function() {
     return (
       React.createElement('form', {className: 'contactForm'},
+        React.createElement('label', {
+          htmlFor: 'Name',
+        }, 'Name'),
         React.createElement('input', {
           type: 'text',
-          placeholder: 'Name',
+          id: 'Name',
           value: this.props.contact.firstName,
         }),
+        React.createElement('label', {
+          htmlFor: 'Surname',
+        }, 'Surname'),
         React.createElement('input', {
           type: 'text',
-          placeholder: 'Surname',
+          id: 'Surname',
           value: this.props.contact.lastName,
         }),
+        React.createElement('label', {
+          htmlFor: 'Email',
+        }, 'Email'),
         React.createElement('input', {
           type: 'email',
-          placeholder: 'Email',
+          id: 'Email',
           value: this.props.contact.email,
         }),
         React.createElement('button', {type: 'submit', className: 'contactBtn'}, "Add to contacts")
